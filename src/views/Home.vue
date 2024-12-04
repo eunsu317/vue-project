@@ -25,7 +25,7 @@
     },
     methods: {
       fetchMovies() {
-        axios.get('a0e054e47b1ca4d58abcfc16ccf746bd') // 여기에 API URL 입력
+        axios.get('https://api.themoviedb.org/3/') // 여기에 API URL 입력
           .then(response => {
             this.movies = response.data.results; // API 응답에 따라 조정
             this.loading = false;
